@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Post Details</h1>
+        <a href="index.html">← Back to Home</a>
+    </header>
+
+    <main>
+        <section id="post-content">
+            <h2>Post Title</h2>
+            <p>Post details go here...</p>
+        </section>
+
+        <section id="comments">
+            <h3>Comments</h3>
+            <ul id="comment-list"></ul>
+            <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+            <button onclick="addComment()">Post Comment</button>
+        </section>
+    </main>
+
+    <script>
+        function addComment() {
+            let commentText = document.getElementById("comment-input").value;
+            if (commentText.trim() !== "") {
+                let commentList = document.getElementById("comment-list");
+                let newComment = document.createElement("li");
+                newComment.textContent = commentText;
+                commentList.appendChild(newComment);
+                document.getElementById("comment-input").value = "";
+            }
+        }
+    </script>
+</body>
+</html>

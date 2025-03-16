@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Health and Fitness</h1>
+    </header>
+
+    <main>
+        <section id="posts-container">
+            <div class="post">
+                <img src="https://media.istockphoto.com/id/1391410249/photo/sports-and-gym-activities.jpg?s=612x612&w=0&k=20&c=1S-hAmT-CkRtdYV_hcKi1lZdQkXAN_mCy3ebIXlUEnE=" alt="Forum Discussion">
+                <h2>Why is fitness important?</h2>
+                <p>Fitness is important because it can improve your physical and mental health, and reduce your risk of chronic disease</p>
+                <p>Votes: <span id="vote-1">5</span></p>
+                <div class="vote-buttons">
+                    <button class="upvote" onclick="vote(1, 1)">👍 Upvote</button>
+                    <button class="downvote" onclick="vote(1, -1)">👎 Downvote</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="https://www.popsci.com/wp-content/uploads/2023/01/13/how-to-start-your-fitness-journey.jpg?quality=85&w=2000" alt="Fitness Discussion">
+                <h2>How to start a fitness journey?</h2>
+                <p>To embark on a successful fitness journey, start with realistic goals, choose activities you enjoy, and gradually increase your intensity while focusing on consistency and proper nutrition. </p>
+                <p>Votes: <span id="vote-2">10</span></p>
+                <div class="vote-buttons">
+                    <button class="upvote" onclick="vote(2, 1)">👍 Upvote</button>
+                    <button class="downvote" onclick="vote(2, -1)">👎 Downvote</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="https://gravity.fitness/cdn/shop/articles/7_diet_rules_for_a_fit_and_healthy_life.jpg?v=1673869325&width=2048" alt="Healthy Diet">
+                <h2>Best diet for muscle gain?</h2>
+                <p>To effectively gain muscle, focus on a diet rich in protein, complex carbohydrates, and healthy fats, while also ensuring adequate calorie intake to support muscle growth and recovery. </p>
+                <p>Votes: <span id="vote-3">7</span></p>
+                <div class="vote-buttons">
+                    <button class="upvote" onclick="vote(3, 1)">👍 Upvote</button>
+                    <button class="downvote" onclick="vote(3, -1)">👎 Downvote</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gym Discussion Board | Built for Strength & Community</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://i.pinimg.com/474x/f7/99/20/f79920f4cb34986684e29df42ec0cebe.jpg" alt="Facebook"></a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQIqzv3klUwYdw6gGu46ZGaLUndElkWqDwA&s" alt="Twitter"></a>
+            <a href="#"><img src="https://i.pinimg.com/736x/bc/21/ae/bc21ae74062c452722b76529d63560bf.jpg" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #222, #333); /* Dark gradient */
+    color: #FFD700; /* Gold text (gym feel) */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Posts Container */
+#posts-container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Post Styling */
+.post {
+    background: linear-gradient(145deg, #1e1e1e, #2b2b2b); /* Dark metallic feel */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    border-left: 5px solid #FFD700; /* Gold accent */
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+/* Image Styling */
+.post img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    animation: fadeIn 1.2s ease-in-out;
+    border-bottom: 3px solid #FFD700; /* Gold accent */
+}
+
+/* Vote Buttons */
+.vote-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Upvote & Downvote Buttons */
+.upvote {
+    background-color: green; /* Bright yellow for energy */
+}
+
+.downvote {
+    background-color: #d32f2f; /* Aggressive red */
+}
+
+/* Footer Styling */
+footer {
+    background: #1f1f1f; /* Dark footer */
+    color: #FFD700; /* Gold text */
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0px -4px 6px rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
